@@ -15,7 +15,7 @@ html {
   block-size: 100%;
   margin: auto;
   color: #fff;
-  font-family: Fira Sans Condensed, sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
 }
@@ -106,7 +106,7 @@ ol {
 
 .search-form__fieldset-title {
   color: #fff;
-  font-family: Fira Sans Condensed, sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   text-align: left;
   font-size: 18px;
   font-style: normal;
@@ -127,7 +127,7 @@ ol {
 }
 
 .search-form__label-text {
-  font-family: Fira Sans Condensed, sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -144,7 +144,7 @@ ol {
   border-style: solid;
   min-width: 225px;
   height: 27px;
-  font-family: Fira Sans Condensed, sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -166,14 +166,14 @@ ol {
   text-decoration-color: #fff;
 }
 
-.content__video-card-title:hover {
-  text-decoration: underline;
-  text-decoration-color: #fff;
-}
-
 .content__video-card-description:hover {
   text-decoration: underline;
   text-decoration-color: #000;
+}
+
+.content__card-link:hover {
+  text-decoration: underline;
+  text-decoration-color: #fff;
 }
 
 .button:active {
@@ -181,6 +181,10 @@ ol {
 }
 
 .content__list-item:active {
+  background: #545050;
+}
+
+.content__card-link_current:active {
   background: #545050;
 }
 
@@ -240,15 +244,15 @@ input[type="checkbox"]:checked + span {
 }
 
 .title {
-  font-family: Oswald, sans-serif;
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 75px;
   line-height: 94%;
   text-transform: uppercase;
   color: #fff;
-  width: 260px;
-  height: 210px;
+  max-width: 260px;
+  max-height: 210px;
 }
 
 .content__accent {
@@ -259,20 +263,28 @@ input[type="checkbox"]:checked + span {
   text-decoration: none;
   color: #fff;
   margin: 2px;
+  display: block;
+}
+
+.content__card-link_current {
+  background: #545050;
 }
 
 .content__video-card-title {
-  font-family: Oswald, sans-serif;
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
   line-height: 100%;
   text-transform: uppercase;
   color: #fff;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .content__video-card-description {
-  font-family: Fira Sans Condensed, sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -295,7 +307,7 @@ input[type="checkbox"]:checked + span {
 .button {
   cursor: pointer;
   border: 1px solid #fff;
-  font-family: Fira Sans Condensed, sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
