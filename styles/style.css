@@ -166,11 +166,6 @@ ol {
   text-decoration-color: #fff;
 }
 
-.content__video-card-description:hover {
-  text-decoration: underline;
-  text-decoration-color: #000;
-}
-
 .content__card-link:hover {
   text-decoration: underline;
   text-decoration-color: #fff;
@@ -252,7 +247,6 @@ input[type="checkbox"]:checked + span {
   text-transform: uppercase;
   color: #fff;
   max-width: 260px;
-  max-height: 210px;
 }
 
 .content__accent {
@@ -281,6 +275,7 @@ input[type="checkbox"]:checked + span {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  max-width: 200px;
 }
 
 .content__video-card-description {
